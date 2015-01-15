@@ -1,0 +1,114 @@
+/* \$gutter: golden-ratio(1em, 1); */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  background: #5ba3d6;
+  font-family: "sans-serif", "arial";
+  vertical-align: center; }
+
+select {
+  width: 200px;
+  color: white; }
+
+textarea {
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  border-radius: 5%; }
+
+select,
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin: 10px 0; }
+
+label {
+  color: #fff;
+  font-size: .9em;
+  position: absolute; }
+
+textarea {
+  width: 200px;
+  height: 200px;
+  color: black;
+  padding-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: white; }
+
+input {
+  width: 200px;
+  color: black;
+  height: 28px;
+  padding-left: 10px;
+  text-decoration: none;
+  background: white;
+  border-radius: 5px;
+  transition: all 1s; }
+  input:focus {
+    border-bottom: 2px solid green; }
+  input:invalid {
+    border-bottom: solid 3px yellow; }
+
+.content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: "sans-serif", "arial";
+  text-transform: uppercase; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  display: inline-block;
+  border: 1px dashed white;
+  max-width: 100%;
+  background: #5ba3d6; }
+  .section:last-child {
+    margin-right: 0; }
+  .section:nth-child(3n) {
+    margin-right: 0; }
+  .section:nth-child(3n+1) {
+    clear: left; }
+  @media screen and (min-width: 501px) and (max-width: 800px) {
+    .section {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%; }
+      .section:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 500px) {
+    .section {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 314.84594%; }
+      .section:last-child {
+        margin-right: 0; } }
+
+/*# sourceMappingURL=stylesheet.css.map */
